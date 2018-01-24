@@ -97,7 +97,7 @@ def addToTablePdf(c,filename):
 				if ("Member" or "Alternate") in etxt: #every table page has these
 					output.addPage(pdf.getPage(j))
 
-#downloads pdf, if minutes downloads as txt and adds it to the pdf of all tables for that committie
+#downloads pdf. If the PDF contains meeting minutes, downloads as txt and adds it to the pdf of all tables for that committie
 def downloadPdfNtxt(c, s, soup):
 	baseDir = bdir + "/" + c + "/" + s
 	baseWeb = "http://www.sandag.org"
